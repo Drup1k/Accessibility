@@ -9,6 +9,8 @@ $ pwd | You can see where you are atm
 
 $ cd .. | go back (to previous folder) cd without an argument will return you to your home directory
 
+$ cd - | go back to previous folder
+
 $ cd | with argument will move you to that directory
 
 $ ls -F -a | -a stands for ‘show all’
@@ -28,5 +30,21 @@ $ nano draft.txt | open text editor
 Ctrl+O | save data to disc (other words - safe file)
 
 Ctrl+X | exit editor
+
+$ touch my_file.txt | create a text file
+
+$ ls -l | inspect the files
+
+$ rm | delete files 
+
+$ mv thesis/draft.txt thesis/quotes.txt | system will rename file draft to quotes
+
+
+
+
+
+
+
+
 
 
