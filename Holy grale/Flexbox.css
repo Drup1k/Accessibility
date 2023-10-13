@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
- 
+ /* this flexbox holy grale template shoulb be done */
 @media all and (min-width: 480px) {
     .container {
         flex-direction: row;
