@@ -1,53 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
+
+ .parallax1, .parallax3 { 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+}
 
 .parallax1 {
     background-image: url("./Pic/706916.jpg");
-    min-height: 350px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax2 {
-    background-image: url("./Pic/italy.webp");
-    min-height: 350px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax3 {
-    background-image: url("./Pic/227031397_4768071999887245_6832026704310393802_n.jpg");
-    min-height: 350px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("./Pic/706916.jpg");
 }
 
 body, html {
     height: 100%;
-  }
-
-
-body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
-  }
+}
 
-  header {
+header {
     background-size: cover;
-  }
-
-/* navigation */
+    background: grey;
+}
 
 .nav {
     display: flex;
@@ -65,7 +49,6 @@ body {
     display: flex;
     margin-right: 2rem;
     list-style-type: none;
-        
 }
 
 .nav-list a {
@@ -78,18 +61,6 @@ body {
     background: lightblue;
 }
 
-@media (max-width: 760px) {
-    .nav {
-    display: inline;
-    justify-content: center;
-    }
-  
-    .nav-list {
-      margin: 0 1rem;
-    }
-  }
-
-/* welcome */
 
 .welcome-section {
     display: flex;
@@ -99,7 +70,9 @@ body {
     width: 50%;
 }
 
-/* project section image */
+main {
+    flex: 1; 
+}
 
 .desc-text {
     display: block;
@@ -111,31 +84,20 @@ body {
     background: var(--main-blue);
 }
 
-.projects-grid {
+.projects-grid, .projects-grid-maps {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
     grid-gap: 1rem;
     width: 100%;
     margin-bottom: 1rem;
     align-items: center;
     justify-items: center;
-    
 }
-
-.projects-grid-maps {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    justify-items: center;
-}
-
 
 .project-image {
     display: inline-block;
-    height: 65%;
-    width: 65%;
+    height: 45%;
+    width: 45%;
     object-fit: cover;
     transition: transform 1s ease;
 }
@@ -144,7 +106,40 @@ body {
     transform: scale(1.7);
 }
 
-/* footer */
+.quick-facts {
+    border: 1px solid var(--main-red);
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    float: left;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.quick-facts h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quick-facts ul {
+    list-style-type: none;
+}
+
+.main-aside-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quick-facts {
+    flex: 0 0 200px; 
+}
+
+#back-to-top {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
 
 footer {
     font-weight: 300;
@@ -153,4 +148,47 @@ footer {
     padding: 2rem;
     background: grey;
     border-top: 4px solid var(--main-red);
-  }
+}
+
+@media (max-width: 760px) {
+    .welcome-section h1 {
+        font-size: 1.5rem;
+    }
+    .welcome-section p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list li {
+        width: 100%;
+    }
+    .nav-list a {
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+}
+
+
+@media (max-width: 760px) {
+    .quick-facts {
+        flex: 1 0 100%; 
+        margin-bottom: 20px; 
+    }
+    main {
+        flex: 1 0 100%; 
+    }
+}
