@@ -78,11 +78,12 @@ main {
 
 .desc-text {
     display: block;
+    padding:0rem 10rem 3rem 10rem;
 }
 
 .projects-section {
     text-align: center;
-    padding: 5rem 2rem;
+    /* padding: 5rem 2rem; */
     background: var(--main-blue);
 }
 
@@ -90,16 +91,15 @@ main {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
     grid-gap: 1rem;
-    width: 100%;
-    margin-bottom: 1rem;
+    width: auto;
     align-items: center;
     justify-items: center;
 }
 
 .project-image {
     display: inline-block;
-    height: 45%;
-    width: 45%;
+    height: 70%;
+    width: 70%;
     object-fit: cover;
     transition: transform 1s ease;
 }
@@ -124,7 +124,7 @@ main {
 }
 
 .quick-facts ul {
-    list-style-type: none;
+    list-style-type:circle;
 }
 
 .main-aside-container {
