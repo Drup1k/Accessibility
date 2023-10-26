@@ -141,6 +141,15 @@ main {
     text-align: center;
 }
 
+.info {
+    padding: 10px 0 0 5px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
 footer {
     font-weight: 300;
     display: flex;
