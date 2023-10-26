@@ -150,15 +150,6 @@ footer {
     border-top: 4px solid var(--main-red);
 }
 
-@media (max-width: 760px) {
-    .welcome-section h1 {
-        font-size: 1.5rem;
-    }
-    .welcome-section p {
-        font-size: 1.1rem;
-    }
-}
-
 
 @media (max-width: 760px) {
     .nav {
@@ -180,15 +171,23 @@ footer {
         text-align: center;
         border-top: 1px solid rgba(255, 255, 255, 0.2); 
     }
-}
-
-
-@media (max-width: 760px) {
+    .welcome-section h1 {
+        font-size: 1.5rem;
+    }
+    .welcome-section p {
+        font-size: 1.1rem;
+    }
     .quick-facts {
-        flex: 1 0 100%; 
+        flex:block;
+        align-items: center;
         margin-bottom: 20px; 
     }
     main {
         flex: 1 0 100%; 
     }
+    .main-aside-container {
+        justify-content:center;
+    }
 }
+
+
