@@ -193,6 +193,11 @@ footer {
         align-items: center;
         margin-bottom: 20px; 
     }
+    .desc-text {
+        flex-wrap: wrap;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+    }
+
     main {
         flex: 1 0 100%; 
     }
@@ -200,5 +205,3 @@ footer {
         justify-content:center;
     }
 }
-
-
