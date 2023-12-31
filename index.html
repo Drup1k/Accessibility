@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="StyleP.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrej's Travel Blog</title>
+</head>
+
+<body>
+<!-- start header -->
+    <header>
+        <a id="back-to-top"></a>
+<!-- start nav -->
+        <nav id="navbar" class="nav" role="navigation" aria-label="primary navigation">
+<!-- welcome section -->
+            <section class="welcome-section" aria-label="welcome-section">
+                
+                <h1>Hi, I am Andrej.</h1>
+                <p>A world traveler!</p>
+            </section>
+            <ul class="nav-list">
+                <li>
+                    <a href="">About Me</a>
+                </li>
+                <li>
+                    <a href="#jump-hi">Places I've Visited</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+<!-- end nav -->
+        <section class="parallax1" aria-hidden="true"></section>
+    </header>
+<!-- end header -->
+
+<!-- start aside section -->
+    <section class="main-aside-container">
+    <aside class="quick-facts" role="complementary">
+        <h3 tabindex="0">Quick Travel Facts</h3>
+        <ul tabindex="0">
+            <li>Countries Visited: 42</li>
+            <li>Favorite Destination: Paris, France</li>
+            <li>Next Trip: Tokyo, Japan</li>
+            <li>Total Miles Traveled: 100,000+</li>
+            <li> <br>
+            <strong>More About My Travels</strong>
+            <li>Longest Journey: From New York to Sydney, a whopping 21-hour flight!</li>
+            <li>Most Unusual Meal: Fried tarantula in Cambodia. It was surprisingly crunchy!</li>
+            <li>Scariest Moment: Getting caught in a thunderstorm while hiking in the Andes.</li>
+            <li>Favorite Travel Companion: My trusty backpack, which has seen more countries than many people!</li>
+            <li>Best Sunset: Overlooking the caldera in Santorini, Greece. The hues of orange and pink were mesmerizing.</li>
+            <li>Most Memorable Cultural Experience: Participating in the Holi festival in India. I was covered in colors for days!</li>
+            <li>Travel Regret: Not staying longer in New Zealand. The landscapes were out of this world.</li>
+            <li>Upcoming Wish-list Destination: The Northern Lights in Iceland. I've heard it's a sight like no other.</li> 
+            </li>
+        </ul>  
+        <br>
+        <hr>
+        <h3 tabindex="0">Want to be my travel buddy? <br>
+        Let me know when - and pack your bags! Fill in the form.</h3>
+        <br>
+<!-- start form -->
+            <form action="https://drup1k.github.io/Accessibility/" aria-labelledby="contact">
+            <a id="contact"></a>
+            <label for="travelor-name">Name:</label>
+            <input type="text" name="travelor-name" id="travelor-name" placeholder="Your name" required/>
+            <br>
+            <label for="travelor-email">Email:</label>
+            <input type="email" name="travelor-email" id="travelor-email" placeholder="exampel@mail.com" required/>
+            <label for="departure-date">Departure Date</label>
+            <input type="date" name="departure-date" id="departure-date" placeholder="departure-date"/>
+            <br>Have a question?
+            <textarea id="questions" name="questions" rows="5" cols="24" placeholder="Type it here"></textarea>
+            <input type="submit" value="Submit">
+            </form>
+            <br><br><hr>
+<!-- end form -->
+    </aside>
+<!-- end aside -->
+
+<!-- start main content -->
+    <main>
+        <section id="projects" class="projects-section">
+           <a id="jump-hi"><h2 tabindex="0">These are some of my visited places</h2></a>
+            
+            <article class="projects-grid">
+                <!-- <figure> -->
+                    <img class="project-image" src="./Pic/227031397_4768071999887245_6832026704310393802_n.jpg" alt="Picture of me sitting on an electric bike in the middle of a nature park">
+                        <figcaption class="desc-text" tabindex="0">Lina and I couldn't contain our excitement as we touched down in Vilnius, Lithuania's enchanting capital. The city's blend of old-world charm and modern dynamism was captivating. We marveled at the grand Vilnius Cathedral, were spellbound by the panoramic views from Gediminas Tower, and lost ourselves in the narrow lanes of the old town.
+                            Our taste buds were treated to traditional Lithuanian delights like 'cepelinai', and our evenings were filled with the city's vibrant nightlife. But it was Užupis, the bohemian district with its unique constitution and art-filled streets, that stole our hearts.
+                            As we left Lithuania, we carried with us memories not just of a beautiful city, but of the cherished moments we shared together.</figcaption>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=(...)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google maps location of my visit"></iframe> -->
+                <!-- </figure> -->
+            </article>
+        
+          
+            
+            <article class="projects-grid">
+                <!-- <figure> -->
+                    <img class="project-image" src="./Pic/20221213_171538_353.jpeg" alt="Picture of me sitting on a bank in a belgian world war 2 cave">
+                        <figcaption class="desc-text" tabindex="0">The cool Belgian air was a stark contrast to the deep warmth of the hidden cave I was about to explore. This wasn't just any cave – it was a relic from WW2, rumored to have sheltered resistance fighters and held secrets of the past.
+                            With each step underground, the weight of history pressed on me. The narrow passages whispered tales of bravery, while the remnants of makeshift camps told of long, hopeful waits in the dark. Shadows seemed to dance, recreating scenes from a time when the world was at war.
+                            Emerging hours later, I felt a deep connection to the past, grateful for the journey and the stories the cave had silently shared.</figcaption>
+                <iframe src="https://www.google.com/maps/embed?pb=(...)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google maps location of my visit"></iframe>
+                <!-- <figure> --> <br>
+                <a href="#back-to-top" id="back-to-top">Back to the top</a><br>
+            </article>
+        </section>
+    </section>
+            <section class="parallax3"></section>
+        
+    </main>
+<!-- end main content -->
+    <footer role="contentinfo">
+        <p>
+            Andrej Travel Blog © 
+        </p>
+    </footer>
+</body>
+</html>
